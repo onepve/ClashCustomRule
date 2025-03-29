@@ -18,8 +18,8 @@ jobs:
             - name: Checkout target repo
               uses: actions/checkout@v3
 
-            - name: Sync Upstream
-              uses: aormsby/Fork-Sync-With-Upstream-action@v3.4
+            - name: Upstream Sync
+              uses: aormsby/Fork-Sync-With-Upstream-action@v3.4.1
               with:
                   target_repo_token: ${{ secrets.GITHUB_TOKEN }}
                   upstream_sync_repo: chinnsenn/ClashCustomRule
